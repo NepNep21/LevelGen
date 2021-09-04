@@ -188,7 +188,7 @@ struct MainWindow : QMainWindow {
                 *output+="\n";
                 
                 double engramCurrentValue = engramInitLong;
-                *output+=QString("OverridePlayerLevelEngramPoints=%1\n").arg(engramStartAtZero ? 0 : engramCurrentValue);
+                *output+=QString("OverridePlayerLevelEngramPoints=%1\n").arg(engramStartAtZeroBool ? 0 : engramCurrentValue);
                 
                 QString engramOverflowMessage("The next engram value would overflow and was discarded, the result works but does not contain all levels");
                 for (int i = 1; i < playerMaxInt; i++) {
