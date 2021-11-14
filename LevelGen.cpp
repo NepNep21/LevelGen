@@ -163,7 +163,7 @@ struct MainWindow : QMainWindow {
                         break;
                     }
 
-                    if (creatureCurrentValue > MAX_VALUE / creatureMultFloat) {
+                    if (testOverflowMult(creatureCurrentValue, creatureMultFloat)) {
                         error(creatureOverflowMessage, layout, widget);
                         failed = true;
                         break;
@@ -196,7 +196,7 @@ struct MainWindow : QMainWindow {
                         break;
                     }
 
-                    if (engramCurrentValue > MAX_VALUE / engramMultFloat) {
+                    if (testOverflowMult(engramCurrentValue, engramMultFloat)) {
                         error(engramOverflowMessage, layout, widget);
                         break;
                     }
