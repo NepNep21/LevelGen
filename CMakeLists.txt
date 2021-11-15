@@ -5,7 +5,7 @@ project(LevelGen)
 string(APPEND CMAKE_CXX_FLAGS "-Wall")
 
 if(WIN32)
-    string(APPEND CMAKE_CXX_FLAGS "-mwindows")
+    string(APPEND CMAKE_CXX_FLAGS " -mwindows")
 endif()
 
 find_package(Qt5 REQUIRED COMPONENTS Core Widgets)

@@ -236,6 +236,10 @@ struct MainWindow : QMainWindow {
         void error(const QString &message, QFormLayout *layout, QWidget *widget) {
             QLabel *label = new QLabel("[Error] " + message, widget);
             label->setStyleSheet("QLabel { color: red }");
+            // Funny windows Qt not resizing window and linux Qt wrapping too early
+            #ifdef WIN32
+            label->setWordWrap(true);
+            #endif
             layout->addWidget(label);
         }
 
