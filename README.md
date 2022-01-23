@@ -1,3 +1,5 @@
+This project uses LGPLv3 components of Qt, its source code can be found at https://code.qt.io, the LGPL can be found at Qt-licenses/LGPLv3.txt and the GPL at Qt-licenses/GPLv3.txt
+
 A mostly useless ark config generator for "OverridePlayerLevelEngramPoints" and "LevelExperienceRampOverrides", this was my first C++ project so its code is likely bad.
 
 Why is it "mostly useless"? Because the way it works is very simple, it just multiplies a starting number by a multiplier x times, which usually generates terribly unbalanced configs, i may fix that when i'm better at this, in the meantime PRs are welcome.
